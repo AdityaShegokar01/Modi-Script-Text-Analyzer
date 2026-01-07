@@ -160,6 +160,86 @@ Improve robustness for degraded manuscripts
 
 Extend support to other historical scripts
 
+# ▶️ How to Run the Project :
+
+1️⃣ Clone the Repository
+git clone https://github.com/AdityaShegokar01/Script-Text-Analyzer.git
+cd Script-Text-Analyzer
+
+2️⃣ Run the Web Application
+
+Open a terminal in the project directory and run:
+
+python app.py
+
+After running the command, a local server link (usually http://127.0.0.1:5000) will appear in the terminal.
+
+Click the link to open the web app in your browser
+
+If the link does not open automatically, manually open the index.html file located in the project folder
+
+3️⃣ Verify the Model File
+
+Ensure that the trained model is present in the models/ folder:
+
+models/
+└── best_model.pth
+
+
+This file contains the best trained OCR model and is required for inference.
+
+4️⃣ Upload Modi Lipi Image
+
+Once the web app opens:
+
+Upload a Modi Lipi image from the Dataset/ folder
+
+The application will display the recognized Devanagari text
+
+To verify correctness:
+
+The Dataset/ folder also contains a ground truth text file
+
+The ground truth file has the same name as the image
+
+5️⃣ Enable Translation (Optional – Gemini API)
+
+To translate the extracted Devanagari text into other languages:
+
+Create a file named api_key.txt in the project root
+
+Paste your Gemini API key inside the file
+
+Save the file and restart the application
+
+api_key.txt
+└── YOUR_GEMINI_API_KEY
+
+Once added, the app will enable multilingual translation.
+
+# 📦 Dependencies
+
+🔹 Required Python 
+
+⚙️ Install Dependencies
+
+Run the following command in the project directory:
+
+pip install -r requirements.txt
+
+🔹 Python Libraries:
+
+torch
+torchvision
+flask
+pillow
+numpy
+opencv-python
+unicodedata2
+google-generativeai
+pandas
+
+
 # 📜 Disclaimer
 
 This project is intended for research and educational purposes.
