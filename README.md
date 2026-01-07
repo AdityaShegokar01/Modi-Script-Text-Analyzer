@@ -116,21 +116,14 @@ Translate the output into other languages
 
 # 🛠️ Tech Stack
 
-Python
-
-PyTorch
-
-CNN + BiLSTM (CRNN)
-
-CTC Loss
-
-Flask
-
-Gemini API
-
-PIL / OpenCV
-
-Unicode Text Processing
+Python,
+PyTorch,
+CNN + BiLSTM (CRNN),
+CTC Loss,
+Flask,
+Gemini API,
+PIL / OpenCV,
+Unicode Text Processing.
 
 # 📁 Project Structure
 Script-Text-Analyzer/
@@ -168,41 +161,18 @@ cd Script-Text-Analyzer
 
 2️⃣ Run the Web Application
 
-Open a terminal in the project directory and run:
-
 python app.py
 
-After running the command, a local server link (usually http://127.0.0.1:5000) will appear in the terminal.
-
-Click the link to open the web app in your browser
-
-If the link does not open automatically, manually open the index.html file located in the project folder
 
 3️⃣ Verify the Model File
 
-Ensure that the trained model is present in the models/ folder:
-
-models/
-└── best_model.pth
-
-
-This file contains the best trained OCR model and is required for inference.
+Ensure that the trained model is present in the models/ folder
 
 4️⃣ Upload Modi Lipi Image
 
-Once the web app opens:
-
 Upload a Modi Lipi image from the Dataset/ folder
 
-The application will display the recognized Devanagari text
-
-To verify correctness:
-
-The Dataset/ folder also contains a ground truth text file
-
-The ground truth file has the same name as the image
-
-5️⃣ Enable Translation (Optional – Gemini API)
+5️⃣ Enable Translation 
 
 To translate the extracted Devanagari text into other languages:
 
@@ -217,7 +187,7 @@ api_key.txt
 
 Once added, the app will enable multilingual translation.
 
-# 📦 Dependencies
+#  Dependencies
 
 🔹 Required Python 
 
@@ -229,23 +199,12 @@ pip install -r requirements.txt
 
 🔹 Python Libraries:
 
-torch
-torchvision
-flask
-pillow
-numpy
-opencv-python
-unicodedata2
-google-generativeai
-pandas
-
-
-# 📜 Disclaimer
-
-This project is intended for research and educational purposes.
-Current performance is limited to synthetic data and should not be considered production-ready for real-world OCR use.
-
-# 👤 Author
-
-Aditya Shegokar
-Feel free to explore, fork, or contribute to the project.
+torch,
+torchvision,
+flask,
+pillow,
+numpy,
+opencv-python,
+unicodedata2,
+google-generativeai,
+pandas.
